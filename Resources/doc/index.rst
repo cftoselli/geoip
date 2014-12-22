@@ -38,6 +38,31 @@ opinaia_geo_ip:
 
 5) Enjoy!
 
+Example:
+--------
+
+From a controller:
+
+$geoipService = $this->get('opinaia_geo_ip');
+
+$geoipService->translateIsoCode2to3("AR");
+(Returns: "ARG")
+
+$result = $geoipService->getInfoFromIp("200.110.219.82");
+
+$result->getCountryIsoCode2();  --> "AR"
+
+$result->getCountryIsoCode3();  --> "ARG"
+
+$result->getCityName();         --> "Vicente Lopez"
+
+$result->getRegionName();       --> "Buenos Aires"
+
+$result->getCountryName();      --> "Argentina"
+
+$result->getQueriesRemain();    --> 53433 (How many consults to Maxmind are left)
+
+
 Bonus
 -----
 
