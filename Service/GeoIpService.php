@@ -315,46 +315,5 @@ class GeoIpService {
             return "";
         }
     }
-
-    /**
-     * Finds the localization from the MaxMind GeoIp legacy web service.
-     * @param the ip.
-     * Return Array.
-     */
-
-    public function getInfoFromIpLegacy($ip) {
-        try {
-            $url =self::URL.$ip;
-
-            $curl = curl_init();
-
-            curl_setopt_array( $curl,
-                               array(
-                                     CURLOPT_URL => $url,
-                                     CURLOPT_USERAGENT => '',
-                                     CURLOPT_RETURNTRANSFER => true,
-                                     CURLOPT_SSL_VERIFYPEER => false,
-                                     CURLOPT_SSL_VERIFYHOST => 2
-                                     )
-                               );
-
-            $resp = curl_exec($curl);
-
-            if (curl_errno($curl)) {
-                throw new \Exception('GeoIP Request Failed');
-            }
-
-            $values = str_getcsv($resp);
-
-            $countryCode = $values[self::COUNTRY];
-            $regionCode = $values[self::REGION];
-            $cityName = $values[self::CITY];
-
-            var_dump($values);
-        } catch (\Exception $e) {
-            $localization = null;
-        }
-        return $localization;
-    }
 }
 ?>
