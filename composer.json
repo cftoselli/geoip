@@ -21,15 +21,10 @@
         "bin-dir": "bin"
     },
     "minimum-stability": "dev",
-    "target-dir": "opinaia/geoipbundle",
+    "target-dir": "Opinaia/GeoIpBundle",
     "extra": {
-        "symfony-app-dir": "app",
-        "symfony-web-dir": "web",
-        "incenteev-parameters": {
-            "file": "app/config/parameters.yml"
-        },
         "branch-alias": {
-            "dev-master": "2.3-dev"
+            "dev-master": "0.1-dev"
         }
     }
 }
