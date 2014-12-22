@@ -1,6 +1,6 @@
 <?php
 
-namespace Opinaia\Bundle\GeoIpBundle\Tests\Controller;
+namespace Opinaia\GeoIpBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

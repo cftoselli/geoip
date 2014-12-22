@@ -1,8 +1,8 @@
 <?php
-namespace Opinaia\Bundle\GeoIpBundle\Service;
+namespace Opinaia\GeoIpBundle\Service;
 
 use GeoIp2\WebService\Client;
-use Opinaia\Bundle\GeoIpBundle\Entity\GeoIpInfoEntity;
+use Opinaia\GeoIpBundle\Entity\GeoIpInfoEntity;
 use Exception;
 
 /**
@@ -279,7 +279,7 @@ class GeoIpService {
     /**
      * Finds the localization from the MaxMind GeoIp2 web service.
      * @param the ip.
-     * Return Opinaia\Bundle\GeoIpBundle\Entity\GeoIpInfoEntity.
+     * Return Opinaia\GeoIpBundle\Entity\GeoIpInfoEntity.
      */
 
     public function getInfoFromIp($ip) {

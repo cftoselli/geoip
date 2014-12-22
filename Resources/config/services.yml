@@ -1,5 +1,5 @@
 parameters:
-    opinaia_geo_ip.class: Opinaia\Bundle\GeoIpBundle\Service\GeoIpService
+    opinaia_geo_ip.class: Opinaia\GeoIpBundle\Service\GeoIpService
 
 services:
     opinaia_geo_ip:

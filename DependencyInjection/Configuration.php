@@ -1,6 +1,6 @@
 <?php
 
-namespace Opinaia\Bundle\GeoIpBundle\DependencyInjection;
+namespace Opinaia\GeoIpBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

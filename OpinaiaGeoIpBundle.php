@@ -1,6 +1,6 @@
 <?php
 
-namespace Opinaia\Bundle\GeoIpBundle;
+namespace Opinaia\GeoIpBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

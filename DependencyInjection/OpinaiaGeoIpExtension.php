@@ -1,6 +1,6 @@
 <?php
 
-namespace Opinaia\Bundle\GeoIpBundle\DependencyInjection;
+namespace Opinaia\GeoIpBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

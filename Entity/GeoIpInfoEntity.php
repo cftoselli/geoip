@@ -1,5 +1,5 @@
 <?php
-namespace Opinaia\Bundle\GeoIpBundle\Entity;
+namespace Opinaia\GeoIpBundle\Entity;
 
 use Exception;
 
