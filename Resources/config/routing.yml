@@ -1,0 +1,3 @@
+opinaia_geo_ip_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: OpinaiaGeoIpBundle:Default:index }

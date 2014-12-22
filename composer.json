@@ -1,0 +1,35 @@
+{
+    "name": "opinaia/geoipbundle",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "keywords": ["geoip", "opinaia", "maxmind", "bundle"],
+    "description": "Opinaia Geo Ip Bundle",
+    "homepage": "git@github.com:cftoselli/geoip.git",
+    "autoload": {
+        "psr-0": { "Opinaia\\GeoIpBundle": "" }
+    },
+    "authors": [
+        {
+            "name": "Opinaia",
+            "email": "claudio.toselli@opinaiapanel.com"
+        }
+    ],
+    "require": {
+        "geoip2/geoip2": "~2.0"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "minimum-stability": "dev",
+    "target-dir": "opinaia/geoipbundle",
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-web-dir": "web",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        },
+        "branch-alias": {
+            "dev-master": "2.3-dev"
+        }
+    }
+}

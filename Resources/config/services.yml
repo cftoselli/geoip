@@ -1,0 +1,7 @@
+parameters:
+    opinaia_geo_ip.class: Opinaia\Bundle\GeoIpBundle\Service\GeoIpService
+
+services:
+    opinaia_geo_ip:
+        class: %opinaia_geo_ip.class%
+        arguments: [@service_container]
